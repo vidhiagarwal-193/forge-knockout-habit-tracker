@@ -1,8 +1,14 @@
 import HabitRow from "./HabitRow.jsx";
 
-export default function HabitList({ habits, onToggleToday, onDelete }) {
+export default function HabitList({
+  habits,
+  onToggleToday,
+  onDelete,
+  onEdit,
+  emptyMessage = "Add a habit to get started",
+}) {
   if (habits.length === 0) {
-    return <p className="empty-state">Add a habit to get started</p>;
+    return <p className="empty-state">{emptyMessage}</p>;
   }
 
   return (
@@ -13,6 +19,7 @@ export default function HabitList({ habits, onToggleToday, onDelete }) {
           habit={habit}
           onToggleToday={onToggleToday}
           onDelete={onDelete}
+          onEdit={onEdit}
         />
       ))}
     </ul>
