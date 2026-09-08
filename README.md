@@ -1,6 +1,6 @@
-# Habit Tracker
+# MESA Forge — Habit Tracker
 
-A single-page React app: type a habit, it's added to a "Today" list, tap to mark it done for today. No server, no login — everything lives in `localStorage` in your browser.
+A Next.js app: type a habit, it's added to a "Today" list, tap to mark it done for today. No server, no login — everything lives in `localStorage` in your browser.
 
 ## Run locally
 
@@ -9,13 +9,16 @@ npm install
 npm run dev
 ```
 
+Open [http://localhost:3000](http://localhost:3000).
+
 ## Build for production
 
 ```bash
 npm run build
+npm run start
 ```
 
-Outputs a static site to `dist/`, deployable to Vercel with zero configuration.
+Deployable to Vercel with zero configuration.
 
 ## Notes
 

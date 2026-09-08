@@ -65,7 +65,7 @@ export default function Home({ habits, byob, level, onOpenCategory }) {
       <MesaBrand />
       <header className="app-header">
         <div className="app-header-top">
-          <h1>Good morning, MESA.</h1>
+          <h1>Good morning, founders.</h1>
           <span className="level-badge">Lv {level}</span>
         </div>
         <p className="app-subtitle">Let's get some wins today.</p>
